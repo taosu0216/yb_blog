@@ -1,5 +1,0 @@
-2023/12/13 21:37:48 {"callers":["/home/taosu/桌面/go/src/blog/yb_blog/main.go: 23 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":1702474668078921399}
-2023/12/13 21:49:43 {"callers":["/home/taosu/桌面/go/src/blog/yb_blog/main.go: 23 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":1702475383463228780}
-2023/12/13 21:53:29 {"callers":["/home/taosu/桌面/go/src/blog/yb_blog/main.go: 23 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":1702475609876660712}
-2023/12/13 21:56:36 {"callers":["/home/taosu/桌面/go/src/blog/yb_blog/main.go: 23 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":1702475796828267744}
-2023/12/13 21:59:03 {"callers":["/home/taosu/桌面/go/src/blog/yb_blog/main.go: 23 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":1702475943419705066}
