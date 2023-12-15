@@ -1,5 +1,7 @@
 package model
 
+import "blog/pkg/app"
+
 type Tag struct {
 	*GblueModel
 	Name  string `json:"name"`
@@ -8,4 +10,9 @@ type Tag struct {
 
 func (t *Tag) TableName() string {
 	return "blog_tag"
+}
+
+type TagSwagger struct {
+	List  []*Tag
+	Pager *app.Pager
 }

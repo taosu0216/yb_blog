@@ -25,6 +25,11 @@ func init() {
 	}
 	log.Println("init success")
 }
+
+// @title Yblue`s blog
+// @version 1.0
+// @description Go blog
+// @termsOfService https://blog.yblue.top
 func main() {
 	router := routers.Router()
 	s := &http.Server{
