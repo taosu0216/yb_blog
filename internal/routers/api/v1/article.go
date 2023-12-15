@@ -1,6 +1,8 @@
 package v1
 
 import (
+	"blog/pkg/app"
+	"blog/pkg/errcode"
 	"github.com/gin-gonic/gin"
 )
 
@@ -17,7 +19,10 @@ func NewArticle() Article {
 // @Failure 400 {object} errcode.Error "请求错误"
 // @Failure 500 {object} errcode.Error "内部错误"
 // @Router /api/v1/articles/{id} [get]
-func (a Article) Get(c *gin.Context) {}
+func (a Article) Get(c *gin.Context) {
+	app.NewResponse(c).ToErrorResponse(errcode.ServerError)
+	return
+}
 
 // List @Summary 获取多个文章
 // @Produce  json
@@ -29,7 +34,11 @@ func (a Article) Get(c *gin.Context) {}
 // @Failure 400 {object} errcode.Error "请求错误"
 // @Failure 500 {object} errcode.Error "内部错误"
 // @Router /api/v1/articles [get]
-func (a Article) List(c *gin.Context) {}
+func (a Article) List(c *gin.Context) {
+	c.JSON(200, gin.H{
+		"message": "ok",
+	})
+}
 
 // Create @Summary 新增文章
 // @Produce  json
